@@ -7,6 +7,9 @@ func ExercisesList() {
 	E01()
 	E02()
 	E03()
+	E04()
+	E05()
+	E06()
 }
 
 // E01 Escreva um programa que mostre um número em decimal, binário, e hexadecimal.
@@ -45,4 +48,41 @@ func E03() {
 	fmt.Printf("a = %v, %T\nb = %v, %T\n", a, a, b, b)
 }
 
-// TODO E04
+// Crie um programa que:
+// Atribua um valor int a uma variável
+// Demonstre este valor em decimal, binário e hexadecimal
+// Desloque os bits dessa variável 1 para a esquerda, e atribua o resultado a outra variável
+// Demonstre esta outra variável em decimal, binário e hexadecimal
+func E04() {
+	x := 10
+
+	fmt.Println("\n=== E04 ===")
+	fmt.Printf("%d\t%b\t%#x", x, x, x)
+	y := x << 1
+	fmt.Printf("\n%d\t%b\t%#x\n", y, y, y)
+
+}
+
+// Crie uma variável de tipo string utilizando uma raw string literal.
+// Demonstre-a.
+func E05() {
+	s := `Esta é uma 
+				raw string 
+						literal.`
+	fmt.Println("\n=== E05 ===")
+	fmt.Println(s)
+}
+
+// Utilizando iota, crie 4 constantes cujos valores sejam os próximos 4 anos.
+// Demonstre estes valores.
+func E06() {
+	const (
+		_ = 2025 + iota
+		a
+		b
+		c
+		d
+	)
+	fmt.Println("\n=== E06 ===")
+	fmt.Println(a, b, c, d)
+}
