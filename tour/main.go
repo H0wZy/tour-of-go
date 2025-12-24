@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import flowcontrol "github.com/H0wZy/tour-of-go/tour/3-flowcontrol"
 
 func main() {
 	// welcome.Hello()
@@ -14,20 +14,26 @@ func main() {
 	// basics.LangNames()
 	// basics.ChangeType()
 	// basics.Constants()
-
 	// fmt.Println(basics.NeedInt(basics.Small))
 	// fmt.Println(basics.NeedFloat(basics.Small))
 	// fmt.Println(basics.NeedFloat(basics.Big))
-
 	// var name string
-	var name string
-	fmt.Println("What is your name?")
-	_, err := fmt.Scanln(&name)
+	// var name string
+	// fmt.Println("What is your name?")
+	// _, err := fmt.Scanln(&name)
+	// if err != nil {
+	// 	fmt.Println("Error reading input:", err)
+	// 	return
+	// }
+	// fmt.Printf("Hello, %s!\n", name)
 
-	if err != nil {
-		fmt.Println("Error reading input:", err)
-		return
-	}
+	// for i := 1; i <= 10; i++ {
+	// 	fmt.Println(i)
+	// }
 
-	fmt.Printf("Hello, %s!\n", name) // You might want to handle the error here
+	// for i := range 11 {
+	// 	fmt.Println(i)
+	// }
+
+	flowcontrol.LoopAscii()
 }

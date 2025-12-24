@@ -1,8 +1,10 @@
-package main
+package flowcontrol
 
 import "fmt"
 
-func main() {
-	name := "Bob"
-	fmt.Scan(name)
+// LoopAscii de ascii do 33 ao 122
+func LoopAscii() {
+	for i := 33; i <= 122; i++ {
+		fmt.Printf("%d = %s\n", i, string(rune(i)))
+	}
 }
