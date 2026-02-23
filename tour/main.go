@@ -1,6 +1,8 @@
 package main
 
-import flowcontrol "github.com/H0wZy/tour-of-go/tour/3-flowcontrol"
+import (
+	datagroup "github.com/H0wZy/tour-of-go/tour/4-datagroup"
+)
 
 func main() {
 	// welcome.Hello()
@@ -35,5 +37,6 @@ func main() {
 	// 	fmt.Println(i)
 	// }
 
-	flowcontrol.LoopAscii()
+	// flowcontrol.LoopAscii()
+	datagroup.Slices()
 }
